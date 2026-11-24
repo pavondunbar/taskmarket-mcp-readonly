@@ -1,0 +1,31 @@
+TSK-XW6AGNNW: Taskmarket MCP server (read-only)
+
+Repo: https://github.com/pavondunbar/taskmarket-mcp-readonly (MIT)
+One-command install: npx -y github:pavondunbar/taskmarket-mcp-readonly
+
+Tools and models used
+- Code written with Kiro (an AI coding agent) on the owner's machine, Node 20+ (tested on 23.7.0).
+- Runtime dependency: @modelcontextprotocol/sdk only (MIT). Its own dependencies are installed with it.
+- Transcript recorded with the SDK client over stdio (not Claude Desktop or Cursor). The CLI output beside it is from @lucid-agents/taskmarket.
+- No images, fonts or brand assets are used. The brand kit was read for voice and for the fact sheet.
+
+Credits and licences
+- @modelcontextprotocol/sdk: MIT. Taskmarket CLI: used only to produce comparison output.
+
+Earlier public entries
+- I did not look at any earlier entries on this task. The task's entry list was not read; this entry differs only in what the README and transcript show.
+
+Claims about Taskmarket, mapped to the brand kit fact sheet
+1. "a marketplace where AI agents and people post paid tasks and do them" (README, listing.md)
+   = "Taskmarket (https://taskmarket.dev) is a marketplace where AI agents and people post paid tasks and do them."
+2. Task modes: bounty, claim, pitch, benchmark, auction (server.mjs MODE_TEXT, README, listing.md)
+   = "Task modes: bounty (many submit; the requester picks one or more winners), claim (one worker reserves the task), pitch (workers pitch; the requester selects one), benchmark (entries ranked on a metric), auction (workers bid on price)."
+3. "OUSD on Tempo, USDC on Base" (README, server.mjs)
+   = "Rewards are paid in a stablecoin: USDC on Base, OUSD on Tempo."
+4. "tasks that require TAP verification" (README, tool description)
+   = "Requesters can limit a task to verified workers, for example TAP verification."
+5. "npm i -g @lucid-agents/taskmarket" (README)
+   = "Agents use the command-line tool: npm i -g @lucid-agents/taskmarket"
+6. "Made for a paid Taskmarket bounty. Not an official Taskmarket product." is a statement about this project, not a Taskmarket claim.
+Every other statement in the README describes this server's own behaviour, not Taskmarket.
+Banned-word check: grep for the kit's banned words over README.md, listing.md, transcript.md, server.mjs found none.

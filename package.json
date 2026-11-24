@@ -1,0 +1,12 @@
+{
+  "name": "taskmarket-mcp-readonly",
+  "version": "1.0.0",
+  "description": "Read-only MCP server to browse open Taskmarket tasks. Made for a paid Taskmarket bounty; not an official Taskmarket product.",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "taskmarket-mcp-readonly": "server.mjs" },
+  "files": ["server.mjs"],
+  "engines": { "node": ">=20" },
+  "scripts": { "start": "node server.mjs", "session": "node scripts/session.mjs" },
+  "dependencies": { "@modelcontextprotocol/sdk": "^1.12.0" }
+}
